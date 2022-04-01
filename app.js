@@ -200,34 +200,51 @@
 // console.log(val);
 
 //Template Literals
-const name = 'BILL';
-const age = 31;
-const job = 'DEV';
-const city = 'RAYTOWN';
+// const name = 'BILL';
+// const age = 31;
+// const job = 'DEV';
+// const city = 'RAYTOWN';
 
-//without template strings(ES5)
-html = '<ul><li>Name: ' + name +'</li><li>Age: ' + age + '</li><li>Job: ' + job + ' </li><li>City: ' + city + '</li></ul>';
+// //without template strings(ES5)
+// html = '<ul><li>Name: ' + name +'</li><li>Age: ' + age + '</li><li>Job: ' + job + ' </li><li>City: ' + city + '</li></ul>';
 
-html = '<ul>' +
-'<li>Name: ' + name +'</li>' +
-'<li>Age: ' + age + '</li>' +
-'<li>Job: ' + job + ' </li>';
+// html = '<ul>' +
+// '<li>Name: ' + name +'</li>' +
+// '<li>Age: ' + age + '</li>' +
+// '<li>Job: ' + job + ' </li>';
 
-//with template strings
+// //with template strings
 
-function hello(){
-    return 'hello';
-}
+// function hello(){
+//     return 'hello';
+// }
 
-html = `
-<ul>
-<li>Name: ${name}</li>
-<li>Age:${age} </li>
-<li>Job:${job} </li>
-<li>${2+2}</li>
-<li>${hello()}</li>
-<li>${age > 30 ? 'Over 30' : 'Under 30'}</li>
-</ul>
-`;
+// html = `
+// <ul>
+// <li>Name: ${name}</li>
+// <li>Age:${age} </li>
+// <li>Job:${job} </li>
+// <li>${2+2}</li>
+// <li>${hello()}</li>
+// <li>${age > 30 ? 'Over 30' : 'Under 30'}</li>
+// </ul>
+// `;
 
-document.body.innerHTML = html;
+// document.body.innerHTML = html;
+
+//Arrays & array methods
+
+const numbers = [43,46,33,23,44,36,5];
+const numbers2 = new Array(43,46,33,23,44,36,5);
+const fruit = ['apple', 'banana', 'pear']
+const mixed = ['HELLO', 2,3,'NO',true, undefined, null, new Date()];
+
+let val;
+
+//get array length
+val = numbers.length;
+//check if is array?
+val = Array.isArray('hello');
+
+console.log(numbers);
+console.log(val);
