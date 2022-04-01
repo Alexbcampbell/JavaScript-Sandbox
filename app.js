@@ -94,9 +94,39 @@
 
 //type coersion - concatinating strings and numbers
 
-const val1 = String(5);
-const val2 = 6;
-const sum = val1 + val2;
+// const val1 = String(5);
+// const val2 = 6;
+// const sum = val1 + val2;
 
-console.log(sum);
-console.log(typeof sum);
+// console.log(sum);
+// console.log(typeof sum);
+
+const num1 = 100;
+const num2 = 60;
+
+let val;
+
+//simple math w/numbers
+val = num1 + num2;
+val = num1 * num2;
+val = num1 - num2;
+val = num1 / num2;
+val = num1 % num2;
+
+//math objects
+val = Math.PI;
+val = Math.E;
+val = Math.round(2.8);
+val = Math.ceil(2.4);
+val = Math.floor(2.8);
+val = Math.sqrt(64);
+val = Math.abs(-3);
+val = Math.pow(8,2);
+val = Math.min(2,4,8,9);
+val = Math.max(2,4,8,9);
+val = Math.random();
+
+val = Math.floor(Math.random() * 20 + 1);
+
+
+console.log(val);
