@@ -101,32 +101,100 @@
 // console.log(sum);
 // console.log(typeof sum);
 
-const num1 = 100;
-const num2 = 60;
+// const num1 = 100;
+// const num2 = 60;
+
+// let val;
+
+// //simple math w/numbers
+// val = num1 + num2;
+// val = num1 * num2;
+// val = num1 - num2;
+// val = num1 / num2;
+// val = num1 % num2;
+
+// //math objects
+// val = Math.PI;
+// val = Math.E;
+// val = Math.round(2.8);
+// val = Math.ceil(2.4);
+// val = Math.floor(2.8);
+// val = Math.sqrt(64);
+// val = Math.abs(-3);
+// val = Math.pow(8,2);
+// val = Math.min(2,4,8,9);
+// val = Math.max(2,4,8,9);
+// val = Math.random();
+
+// val = Math.floor(Math.random() * 20 + 1);
+
+
+// console.log(val);
+
+const firstName = 'BILL'
+const lastName = 'DWYER'
+const age = 31
+const str = 'HELLO, MY NAME IS BILL'
+const tags = 'web design, web programming, web stuff'
 
 let val;
 
-//simple math w/numbers
-val = num1 + num2;
-val = num1 * num2;
-val = num1 - num2;
-val = num1 / num2;
-val = num1 % num2;
+val = firstName + lastName;
 
-//math objects
-val = Math.PI;
-val = Math.E;
-val = Math.round(2.8);
-val = Math.ceil(2.4);
-val = Math.floor(2.8);
-val = Math.sqrt(64);
-val = Math.abs(-3);
-val = Math.pow(8,2);
-val = Math.min(2,4,8,9);
-val = Math.max(2,4,8,9);
-val = Math.random();
+//concatenation
+val = firstName + ' ' + lastName;
 
-val = Math.floor(Math.random() * 20 + 1);
+//Append
+val = 'BILL'
+val += 'DWYER'
 
+val = 'Hello, my name is ' + firstName + ' and I am ' + age;
+
+// Escaping
+val = 'That\'s awesome, I can\'t wait';
+
+//Length
+
+val = firstName.length;
+
+
+//concat
+val = firstName.concat(' ', lastName);
+
+//change case
+val = firstName.toUpperCase();
+val = firstName.toLowerCase();
+
+// [] shows index value
+val = firstName[0];
+
+val = firstName.indexOf('I');
+val = firstName.lastIndexOf('L');
+
+//charAt()
+
+val = firstName.charAt('2');
+
+//get last character
+val = firstName.charAt(firstName.length -3);
+
+// substring()
+
+val = firstName.substring(0,3);
+
+//slice()
+val = firstName.slice(0,4);
+val = firstName.slice(0,-3);
+
+//split
+
+val = str.split(' ');
+val = tags.split(',');
+
+//replace
+val = str.replace('BILL', 'DWYER');
+
+//includes
+val = str.includes('HELLO');
 
 console.log(val);
