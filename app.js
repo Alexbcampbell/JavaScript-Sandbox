@@ -300,3 +300,44 @@
 
 // console.log(numbers);
 // console.log(val);
+
+//object literals
+
+const person = {
+    firstName: 'BILL',
+    lastName: 'Dwyer',
+    age: 31,
+    email: 'BDWYER@HOTMAIL',
+    hobbies: ['music', 'sports', 'beer'],
+    address: {
+        city: 'KC',
+        state: 'MO'
+    },
+    getBirthYear: function(){
+        return 2022 - this.age;
+    }
+};
+
+let val;
+//get specific value
+val = person.firstName;
+val = person.age;
+val = person.email;
+val = person.hobbies[0];
+val = person.address.state;
+val = person.address['city'];
+val = person.getBirthYear();
+
+
+
+console.log(val);
+
+const people = [
+    {name: 'John', age: 30},
+    {name: 'Alex', age: 31},
+    {name: 'Nancy', age: 45} 
+];
+
+for(let i = 0; i < people.length; i++){
+    console.log(people[i].name);
+}
