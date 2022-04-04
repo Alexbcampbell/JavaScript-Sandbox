@@ -303,41 +303,67 @@
 
 //object literals
 
-const person = {
-    firstName: 'BILL',
-    lastName: 'Dwyer',
-    age: 31,
-    email: 'BDWYER@HOTMAIL',
-    hobbies: ['music', 'sports', 'beer'],
-    address: {
-        city: 'KC',
-        state: 'MO'
-    },
-    getBirthYear: function(){
-        return 2022 - this.age;
-    }
-};
+// const person = {
+//     firstName: 'BILL',
+//     lastName: 'Dwyer',
+//     age: 31,
+//     email: 'BDWYER@HOTMAIL',
+//     hobbies: ['music', 'sports', 'beer'],
+//     address: {
+//         city: 'KC',
+//         state: 'MO'
+//     },
+//     getBirthYear: function(){
+//         return 2022 - this.age;
+//     }
+// };
 
+// let val;
+// //get specific value
+// val = person.firstName;
+// val = person.age;
+// val = person.email;
+// val = person.hobbies[0];
+// val = person.address.state;
+// val = person.address['city'];
+// val = person.getBirthYear();
+
+
+
+// console.log(val);
+
+// const people = [
+//     {name: 'John', age: 30},
+//     {name: 'Alex', age: 31},
+//     {name: 'Nancy', age: 45} 
+// ];
+
+// for(let i = 0; i < people.length; i++){
+//     console.log(people[i].name);
+// }
+
+//dates and times
 let val;
-//get specific value
-val = person.firstName;
-val = person.age;
-val = person.email;
-val = person.hobbies[0];
-val = person.address.state;
-val = person.address['city'];
-val = person.getBirthYear();
 
+const today = new Date();
+let birthday = new Date('05-05-1998')
+birthday = new Date('May 12 1988')
+birthday = new Date('10/10/1988')
+//ZERO BASED
+val = today.getMonth();
+val = today.getDate();
+val = today.getDay();
+val = today.getFullYear();
+val = today.getHours();
+val = today.getMinutes();
+val = today.getSeconds();
+val = today.getMilliseconds();
+val = today.getTime();
 
-
-console.log(val);
-
-const people = [
-    {name: 'John', age: 30},
-    {name: 'Alex', age: 31},
-    {name: 'Nancy', age: 45} 
-];
-
-for(let i = 0; i < people.length; i++){
-    console.log(people[i].name);
-}
+birthday.setMonth(2);
+birthday.setDate(12);
+birthday.setFullYear(1985);
+birthday.setHours(3);
+birthday.setMinutes(30);
+birthday.setSeconds(25);
+console.log(birthday);
