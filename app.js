@@ -234,17 +234,69 @@
 
 //Arrays & array methods
 
-const numbers = [43,46,33,23,44,36,5];
-const numbers2 = new Array(43,46,33,23,44,36,5);
-const fruit = ['apple', 'banana', 'pear']
-const mixed = ['HELLO', 2,3,'NO',true, undefined, null, new Date()];
+// const numbers = [43,46,33,23,44,36,5];
+// const numbers2 = new Array(43,46,33,23,44,36,5);
+// const fruit = ['apple', 'banana', 'pear']
+// const mixed = ['HELLO', 2,3,'NO',true, undefined, null, new Date()];
 
-let val;
+// let val;
 
-//get array length
-val = numbers.length;
-//check if is array?
-val = Array.isArray('hello');
+// //get array length
+// val = numbers.length;
+// //check if is array?
+// val = Array.isArray(numbers);
+// //get single value
+// val = numbers[3];
+// val = numbers[0]
+// //insert into array
+// numbers[2] = 100;
+// //find index of value
+// val = numbers.indexOf(36);
 
-console.log(numbers);
-console.log(val);
+// // //mutating arrays
+// // //add to beginning of index
+// // numbers.push(250);
+// // //add to end
+// // numbers.unshift(120);
+// // //remove from end
+// // numbers.pop();
+// // //take off from front
+// // numbers.shift();
+// // //splice values 
+// // numbers.splice(1,1,);
+// // //reverse
+// // numbers.reverse();
+
+// //concat array
+// val = numbers.concat(numbers2);
+
+// //sort
+// // val = fruit.sort();
+// // val = numbers.sort();
+
+// //use compare function
+// // val = numbers.sort(function(x,y){
+// // return x - y;
+// // })
+
+// // //reverse sort
+// // val = numbers.sort(function(x,y){
+// //     return y - x;
+// //     })
+
+// //find
+// function under50(num){
+//     return num < 50;
+// }    
+
+// val = numbers.find(under50);
+
+// function over50(num){
+//     return num > 50;
+// }    
+
+// val = numbers.find(over50);
+
+
+// console.log(numbers);
+// console.log(val);
