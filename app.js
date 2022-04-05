@@ -262,7 +262,7 @@
 // // numbers.pop();
 // // //take off from front
 // // numbers.shift();
-// // //splice values 
+// // //splice values
 // // numbers.splice(1,1,);
 // // //reverse
 // // numbers.reverse();
@@ -287,13 +287,13 @@
 // //find
 // function under50(num){
 //     return num < 50;
-// }    
+// }
 
 // val = numbers.find(under50);
 
 // function over50(num){
 //     return num > 50;
-// }    
+// }
 
 // val = numbers.find(over50);
 
@@ -335,7 +335,7 @@
 // const people = [
 //     {name: 'John', age: 30},
 //     {name: 'Alex', age: 31},
-//     {name: 'Nancy', age: 45} 
+//     {name: 'Nancy', age: 45}
 // ];
 
 // for(let i = 0; i < people.length; i++){
@@ -343,27 +343,122 @@
 // }
 
 //dates and times
-let val;
+// let val;
 
-const today = new Date();
-let birthday = new Date('05-05-1998')
-birthday = new Date('May 12 1988')
-birthday = new Date('10/10/1988')
-//ZERO BASED
-val = today.getMonth();
-val = today.getDate();
-val = today.getDay();
-val = today.getFullYear();
-val = today.getHours();
-val = today.getMinutes();
-val = today.getSeconds();
-val = today.getMilliseconds();
-val = today.getTime();
+// const today = new Date();
+// let birthday = new Date('05-05-1998')
+// birthday = new Date('May 12 1988')
+// birthday = new Date('10/10/1988')
+// //ZERO BASED
+// val = today.getMonth();
+// val = today.getDate();
+// val = today.getDay();
+// val = today.getFullYear();
+// val = today.getHours();
+// val = today.getMinutes();
+// val = today.getSeconds();
+// val = today.getMilliseconds();
+// val = today.getTime();
 
-birthday.setMonth(2);
-birthday.setDate(12);
-birthday.setFullYear(1985);
-birthday.setHours(3);
-birthday.setMinutes(30);
-birthday.setSeconds(25);
-console.log(birthday);
+// birthday.setMonth(2);
+// birthday.setDate(12);
+// birthday.setFullYear(1985);
+// birthday.setHours(3);
+// birthday.setMinutes(30);
+// birthday.setSeconds(25);
+// console.log(birthday);
+
+//if statements
+// if(something){
+//     do something
+// } else {
+//     do something else
+// }
+
+// const id = '100';
+
+// if(id == 100){
+//     console.log('correct');
+// } else {
+//     console.log('Incorrect')
+// }
+
+// //not equal to
+
+// if(id != 101){
+//     console.log('correct');
+// } else {
+//     console.log('Incorrect')
+// }
+
+// //equal to value & type
+// if(id === 100){
+//     console.log('correct');
+// } else {
+//     console.log('Incorrect')
+// }
+
+// //not equal to value and type
+
+// //equal to value & type
+// if(id !== 100){
+//     console.log('correct');
+// } else {
+//     console.log('Incorrect')
+// }
+
+//test if undefined
+// if( typeof id !== 'undefined'){
+//     console.log(`The id is ${id}`)
+// } else {
+//     console.log('no id')
+// }
+
+// const id = '100';
+
+// //greater or less than
+// if(id <= 100){
+//     console.log('correct');
+// } else {
+//     console.log('Incorrect')
+// }
+
+// //If Else
+// const color = 'yellow';
+
+// if(color === 'red'){
+//     console.log('Color is red')
+// } else if(color === 'blue') {
+// console.log('color is blue')
+// } else {
+//     console.log('color is not red or blue')
+// }
+
+//logical operators
+const name ='Steve'
+const age = 20;
+
+
+//and &&
+if(age > 0 && age < 12){
+    console.log(`${name} is a child`);
+} else if(age >= 13 && age <= 19){
+    console.log(`${name} is a teenager`)
+} else {
+    console.log(`${name} is an adult`)
+}
+
+//OR ||
+if(age < 16 || age > 65){
+    console.log(`${name} can not run in race`)
+} else {
+    console.log(`${name} is registered for the race`)
+}
+
+//ternary operators
+console.log(id === 100 ? 'Correct' : 'incorrect')
+
+if(id === 100)
+console.log('Correct');
+else
+console.log('Incorrect')
