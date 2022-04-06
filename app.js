@@ -586,7 +586,7 @@ return x*x
 
 //Loop through array
 
-let cars = ['chevy', 'ford', 'honda', 'toyota']
+// let cars = ['chevy', 'ford', 'honda', 'toyota']
 
 // for(let i = 0; i < cars.length; i++){
 //     console.log(cars[i])
@@ -615,12 +615,84 @@ let cars = ['chevy', 'ford', 'honda', 'toyota']
 
 //For in
 
-const user = {
-    firstName: 'John',
-    lastName: 'Doe',
-    age: 40
-}
+// const user = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     age: 40
+// }
 
-for(let x in user){
-    console.log(`${x} : ${user[x]}`)
-}
+// for(let x in user){
+//     console.log(`${x} : ${user[x]}`)
+// }
+
+//window methods, objects, properties
+// console.log(123);
+
+// alert('HELLO')
+
+//prompt
+// const input = prompt();
+// alert(input);
+
+//confirm
+// if(confirm('Are you sure')){
+//     console.log('YES')
+// } else {
+//     console.log('NO')
+// }
+
+//properties
+// let val;
+
+// //outer height and width
+// val = window.outerHeight
+// val = window.outerWidth
+// val = window.innerHeight
+// val = window.innerWidth
+
+// // scroll points
+// val = window.scrollY
+
+// // location object
+
+// val = window.location
+
+// //Redirect
+// // window.location.href = 'http://google.com';
+
+// //reload
+// // window.location.reload();
+// val = window.navigator
+
+
+// console.log(val);
+
+// //Global scope
+// var a = 1;
+// let b = 2;
+// const c = 3;
+
+// // console.log('Global scope ' , a , b, c)
+
+// // function test(){
+// //     var a = 4;
+// //     let b = 5;
+// //     const c = 6;
+// //     console.log('Function Scope ', a, b, c)
+// // }
+// // test();
+
+// // if(true){
+// //     //Block scope
+// //     var a = 4;
+// //     let b = 5;
+// //     const c = 6;
+// // console.log('if Scope ', a, b, c)
+// // }
+// // console.log('Global scope ' , a , b, c)
+
+// // for( var a = 0; a < 10; a++){
+// //     console.log(`Loop: ${a}`)
+// // }
+
+// console.log('Global scope ' , a , b, c)
