@@ -435,30 +435,192 @@
 // }
 
 //logical operators
-const name ='Steve'
-const age = 20;
+// const name ='Steve'
+// const age = 20;
 
 
-//and &&
-if(age > 0 && age < 12){
-    console.log(`${name} is a child`);
-} else if(age >= 13 && age <= 19){
-    console.log(`${name} is a teenager`)
-} else {
-    console.log(`${name} is an adult`)
+// //and &&
+// if(age > 0 && age < 12){
+//     console.log(`${name} is a child`);
+// } else if(age >= 13 && age <= 19){
+//     console.log(`${name} is a teenager`)
+// } else {
+//     console.log(`${name} is an adult`)
+// }
+
+// //OR ||
+// if(age < 16 || age > 65){
+//     console.log(`${name} can not run in race`)
+// } else {
+//     console.log(`${name} is registered for the race`)
+// }
+
+// //ternary operators
+// console.log(id === 100 ? 'Correct' : 'incorrect')
+
+// if(id === 100)
+// console.log('Correct');
+// else
+// console.log('Incorrect')
+
+//Switches
+// const color ='yello';
+
+// switch(color){
+//     case 'red': 
+//     console.log('color is red')
+//     break;
+//     case 'blue':
+//     console.log('color is blue')
+//     break;
+//     default:
+//         console.log('color is not red or blue')
+//         break;
+// }
+
+// let day;
+
+// switch(new Date().getDay()){
+//     case 0:
+//         day = 'sunday'
+//     break;
+//     case 1:
+//         day = 'monday'
+//     break;
+//     case 2:
+//         day = 'tuesday'
+//     break;
+//     case 3:
+//         day = 'wednesday'
+//     break;
+//     case 4:
+//         day = 'thursday'
+//     break; 
+//     case 5:
+//         day = 'thursday'
+//     break; 
+//     case 6:
+//         day = 'friday'
+//     break;        
+// }
+
+// console.log(`today is ${day}`);
+
+//function declaration
+function greet(firstName = 'John', lastName = 'Doe'){
+    // if(typeof firstName === 'undefined'){
+    //     firstName = 'John'
+    // }
+    // if(typeof lastName === 'undefined'){
+    //     lastName = 'Doe'
+    // }
+    return 'Hello' + ' ' + firstName + ' ' + lastName
+};
+
+// console.log(greet());
+
+//function expressions
+
+const square = function(x = 3){
+return x*x
+};
+
+// console.log(square())
+
+//immediately invocable function expressions = IIFEs
+
+// (function(){
+//     console.log('IIFE ran..')
+// })();
+
+// (function(name){
+//     console.log('HEllo'+ name)
+// })('JOHN');
+
+//property methods
+
+// const todo ={
+//     add: function(){
+//         console.log('Add todo')
+//     },
+//     edit: function(id){
+//         console.log(`Edit todo ${id}`)
+//     }
+// }
+
+// todo.delete = function(){
+//     console.log('Delete todo')
+// }
+
+// todo.add()
+// todo.edit(22)
+// todo.delete()
+
+//Loops
+//For loop
+
+// for(let i = 0; i <= 10; i++){
+// console.log('Number ' + i)
+// }
+
+// for(let i = 0; i <= 10; i++){
+//     if( i === 2){
+//         console.log('2 is my fave num');
+//         continue;
+//     }
+// if(i === 5){
+//     break;
+// }
+
+//     console.log('Number ' + i)
+//     }
+
+//WHILE LOOP
+
+// let i = 0;
+
+// while(i < 10){
+//     console.log('Number ' + i)
+//     i++;
+// }
+
+//Loop through array
+
+let cars = ['chevy', 'ford', 'honda', 'toyota']
+
+// for(let i = 0; i < cars.length; i++){
+//     console.log(cars[i])
+// }
+
+//For each 
+// cars.forEach(function(car, index, array){
+// console.log(`${index} : ${car}`);
+// console.log(array)
+// })
+
+//MAP
+// const users = [
+//     {id:1, name: 'John'},
+//     {id: 2, name: 'Sarah'},
+//     {id: 3, name: 'Walt'},
+//     {id: 4, name: 'Deetoe'}
+// ]
+
+// const ids = users.map(function(user){
+//     return user.id
+// })
+
+
+// console.log(ids);
+
+//For in
+
+const user = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 40
 }
 
-//OR ||
-if(age < 16 || age > 65){
-    console.log(`${name} can not run in race`)
-} else {
-    console.log(`${name} is registered for the race`)
+for(let x in user){
+    console.log(`${x} : ${user[x]}`)
 }
-
-//ternary operators
-console.log(id === 100 ? 'Correct' : 'incorrect')
-
-if(id === 100)
-console.log('Correct');
-else
-console.log('Incorrect')
