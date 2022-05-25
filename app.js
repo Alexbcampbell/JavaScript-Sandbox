@@ -765,3 +765,8 @@ return x*x
 // const re2 = new RegExp('\\w+');
 
 // console.log(re2);
+
+//prototypes
+//each object in javascript has a prototype
+//object.prototype
+//person.prototype
