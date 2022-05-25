@@ -698,21 +698,70 @@ return x*x
 // console.log('Global scope ' , a , b, c)
 
 //Person constructor
-function Person(name, dob){
-    this.name = name;
-    this.birthday = new Date(dob);
-    this.calculateAge = function(){
-        const diff = Date.now() - this.birthday.getTime();
-        const ageDate = new Date(diff);
-        return Math.abs(ageDate.getUTCFullYear() - 1970);
-    }
-    // this.age = age
-    //console.log(this);
-}
+// function Person(name, dob){
+//     this.name = name;
+//     this.birthday = new Date(dob);
+//     this.calculateAge = function(){
+//         const diff = Date.now() - this.birthday.getTime();
+//         const ageDate = new Date(diff);
+//         return Math.abs(ageDate.getUTCFullYear() - 1970);
+//     }
+//     // this.age = age
+//     //console.log(this);
+// }
 
-// const brad = new Person('Brad', 30);
-// const john = new Person('John', 36);
+// // const brad = new Person('Brad', 30);
+// // const john = new Person('John', 36);
 
-const brad = new Person('Brad', '9-10-1988');
+// const brad = new Person('Brad', '9-10-1988');
 
-console.log(brad.calculateAge());
+// console.log(brad.calculateAge());
+
+//string
+// const name1 = 'Jeff';
+// const name2 = new String('jeff');
+
+// name2.foo = 'bar'
+
+// console.log(typeof name2)
+
+// if(name2 == 'Jeff'){
+//     console.log('yes')
+// } else {
+//     console.log('NO')
+// }
+
+//number
+// const num1 = 5;
+// const num2 = new Number(5);
+
+// console.log(num2)
+
+//boolean
+// const bool1 = true;
+// const bool2 = new Boolean(true);
+
+// //function
+// const getSum1 = function(x,y){
+//     return x + y;
+// }
+
+// const getSum2 = new Function('x','y','return 1 + 1');
+
+// console.log(getSum2(1,1));
+
+//object
+// const john1 = {
+//     name: 'John'
+// }
+// const john2 = new Object({name: 'John'});
+
+// //arrays
+// const arr1 = [1,2,3,4];
+// const arr2 = new Array(1,2,3,4);
+
+// // Regular expressions
+// const re1 = /\w+/;
+// const re2 = new RegExp('\\w+');
+
+// console.log(re2);
